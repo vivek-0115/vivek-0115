@@ -3,6 +3,3 @@
 <div align="center">
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=4000&pause=500&center=true&vCenter=true&random=true&width=300&height=40&lines=Machine+Learning;Deep+Learning;Generative+AI"/>
 </div>
-
-# [Bytes Code](https://github.com/vivek-0115)
-
