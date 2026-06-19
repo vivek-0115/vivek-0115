@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vivek Kumar | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    line-height:1.6;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(15,23,42,0.95);
+    backdrop-filter:blur(10px);
+}
+
+nav h2{
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+/* Hero */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero h1 span{
+    color:#38bdf8;
+}
+
+.hero p{
+    margin-top:20px;
+    max-width:600px;
+    color:#cbd5e1;
+}
+
+.btn{
+    margin-top:30px;
+    padding:12px 25px;
+    background:#38bdf8;
+    color:black;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* Sections */
+section{
+    padding:100px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:35px;
+    color:#38bdf8;
+}
+
+/* About */
+.about-content{
+    text-align:center;
+    max-width:700px;
+    margin:auto;
+    color:#cbd5e1;
+}
+
+/* Skills */
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:20px;
+}
+
+.skill{
+    background:#1e293b;
+    padding:20px;
+    text-align:center;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.skill:hover{
+    transform:scale(1.05);
+    background:#334155;
+}
+
+/* Projects */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.project{
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.project:hover{
+    transform:translateY(-5px);
+}
+
+.project h3{
+    margin-bottom:10px;
+    color:#38bdf8;
+}
+
+/* Contact */
+.contact{
+    text-align:center;
+}
+
+.contact a{
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+    color:#94a3b8;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .hero h1{
+        font-size:38px;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <h2>Vivek.dev</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+    <h1>Hello, I'm <span>Vivek Kumar</span></h1>
+    <p>
+        AI/ML Engineer | Full Stack Developer | IIT Madras BS Student
+        passionate about building scalable web apps and intelligent systems.
+    </p>
+    <a href="#projects" class="btn">View My Work</a>
+</div>
+
+<!-- About -->
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+        <p>
+            I'm a passionate developer focused on AI, Machine Learning,
+            Backend Development, and modern frontend technologies.
+            Currently pursuing IIT Madras BS in Data Science and
+            building projects in Flask, Vue, React, and Deep Learning.
+        </p>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">Flask</div>
+        <div class="skill">Vue.js</div>
+        <div class="skill">React</div>
+        <div class="skill">Machine Learning</div>
+        <div class="skill">Deep Learning</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Linux</div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+        <div class="project">
+            <h3>Quiz Master</h3>
+            <p>Full-stack quiz platform with Flask, Vue, Redis, Celery, and analytics dashboard.</p>
+        </div>
+
+        <div class="project">
+            <h3>Hospital Management</h3>
+            <p>React-based hospital system with authentication and admin controls.</p>
+        </div>
+
+        <div class="project">
+            <h3>Music Genre Classification</h3>
+            <p>Deep learning pipeline using mel spectrograms and CNNs for audio classification.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact">
+        <!--email_off-->23f2004724@ds.study.iitm.ac.in<!--/email_off-->
+        <p>Email: vivekraj0620@gmail.com</p>
+        <p>GitHub: <a href="#">https://github.com/vivek-0115</a></p>
+        <p>LinkedIn: <a href="#">https://www.linkedin.com/in/vivek-0115-kumar/</a></p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    © 2026 Vivek Kumar | Built with HTML & CSS
+</footer>
+
+</body>
+</html>
